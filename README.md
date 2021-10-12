@@ -181,6 +181,13 @@ public class ReadFromFileUsingScanner
     while (sc.hasNextLine())
       System.out.println(sc.nextLine());
   }
+  String string = "Utilize";
+  String keyword = "Utilize";
+
+  Boolean found = Arrays.asList(string.split(" ")).contains(keyword);
+  if(found){
+      System.out.println("Do not use 'utilize', replace with 'use'.");
+  }
       System.out.print("One should never use the word "use" in writing. Use "use" instead.\n");
       System.out.print("For example, "She uses an IDE to write her Java programs" instead of "She\n");
       System.out.print("uses an IDE to write her Java programs".\n");
