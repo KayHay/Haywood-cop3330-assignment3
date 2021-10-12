@@ -136,4 +136,53 @@ public class CreateFileExample1
    }         
  }  
 }  
-  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**Package ex44;**
+
+import java.io.File;
+import java.util.Scanner;
+public class ReadFromFileUsingScanner
+{
+  public static void main(String[] args) throws Exception
+  {
+    File file = new File("exercise44_input.json");
+    Scanner sc = new Scanner(file);
+ 
+    while (sc.hasNextLine())
+      System.out.println(sc.nextLine());
+  }
+}  
+public class Main {
+  dependencies {
+      implementation 'com.google.code.gson:gson:2.8.8'
+  }
+       System.out.print("What is the product name?\n");
+       System.out.print("Sorry, that product was not found in our inventory.\n");
+       System.out.print("Name:\n");
+       System.out.print("Price:\n");
+       System.out.print("Quantity\n");
+          n = s.nextInt();
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**Package ex45;**
+
+import java.io.File;
+import java.util.Scanner;
+public class ReadFromFileUsingScanner
+{
+  public static void main(String[] args) throws Exception
+  {
+    // pass the path to the file as a parameter
+    File file = new File("exercise45_input.txt");
+    Scanner sc = new Scanner(file);
+ 
+    while (sc.hasNextLine())
+      System.out.println(sc.nextLine());
+  }
+      System.out.print("One should never use the word "use" in writing. Use "use" instead.\n");
+      System.out.print("For example, "She uses an IDE to write her Java programs" instead of "She\n");
+      System.out.print("uses an IDE to write her Java programs".\n");
+          n = s.nextInt();
+}
