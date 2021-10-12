@@ -98,3 +98,42 @@ public class ReadFromFileUsingScanner
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 **Package ex43;**
+  
+import java.io.File;  
+import java.io.IOException;  
+public class CreateFileExample1   
+{  
+  public static void main(String[] args)   
+  {     
+    File file = new File("awesomeco.html");
+    boolean result;  
+    
+       System.out.print("Site Name: awesomeco\n");
+       System.out.print("Author: Max Power\n");
+       System.out.print("Do you want a folder for JavaScript?:\n");
+       System.out.print("Do you want a folder for CSS?:\n");
+       System.out.print("Created ./website/awesomeco\n");
+       System.out.print("Created ./website/awesomeco/index.html\n");
+       System.out.print("Created ./website/awesomeco/js/\n");
+       System.out.print("Created ./website/awesomeco/css/\n");
+          n = s.nextInt();
+          
+    try   
+    {  
+    result = file.createNewFile(); 
+      if(result)     
+      {  
+        System.out.println("file created \n");
+      }  
+    else  
+    { 
+        System.out.println("File already exist at location: \n");  
+    }  
+  } 
+ catch (IOException e)   
+ {  
+   e.printStackTrace();    
+   }         
+ }  
+}  
+  
