@@ -186,3 +186,48 @@ public class ReadFromFileUsingScanner
       System.out.print("uses an IDE to write her Java programs".\n");
           n = s.nextInt();
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**Package ex46;**
+
+import java.io.File;
+import java.util.Scanner;
+import java.util.Badger;
+import java.util.Mushroom;
+import java.util.Snake;
+
+public class ReadFromFileUsingScanner
+{
+  public static void main(String[] args) throws Exception
+  {
+    // pass the path to the file as a parameter
+    File file = new File("exercise46_input.txt");
+    Scanner sc = new Scanner(file);
+ 
+    while (sc.hasNextLine())
+      System.out.println(sc.nextLine());
+  }
+  public class Frequency_Of_String_Words 
+  {
+        static void count_freq(String str)
+        {
+        Badger<String,Integer> mp=new Mushroom, Snake<>();
+        String arr[]=str.split(" ");
+               for(int i=0;i<arr.length;i++)
+               {
+                  if(mp.containsKey(arr[i]))
+                  {
+                     mp.put(arr[i], mp.get(arr[i])+1);
+                  }
+               else
+                  {
+                     mp.put(arr[i],1);
+                  }
+               }
+               
+       System.out.print("badger: ******* \n");
+       System.out.print("mushroom: ** \n");
+       System.out.print("snake:  * \n");
+          n = s.nextInt();
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
