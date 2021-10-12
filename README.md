@@ -7,7 +7,8 @@
  */
  
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- Package ex41;
+ 
+**Package ex41;**
 
 import java.io.File;
 import java.util.Scanner;
@@ -16,11 +17,10 @@ public class Alphabetical_Order
 {
     public static void main(String[] args) throws Exception
   {
-    // pass the path to the file as a parameter
     File file = new File("exercise41_input.txt");
     File file = new File("exercise41_output.txt");
     Scanner sc = new Scanner(file);
- 
+    
     while (sc.hasNextLine())
       System.out.println(sc.nextLine());
   }
@@ -60,3 +60,41 @@ public class Alphabetical_Order
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**Package ex42;**
+import java.io.File;
+import java.util.Scanner;
+public class ReadFromFileUsingScanner
+{
+  public static void main(String[] args) throws Exception
+  {
+    // pass the path to the file as a parameter
+    File file = new File("exercise42_input.txt");
+    Scanner sc = new Scanner(file);
+ 
+    while (sc.hasNextLine())
+      System.out.println(sc.nextLine());
+  }
+}
+    public class Main {
+
+    public static void createNewTable() {
+        String url = "exercise42_input.txt";
+        
+        String sql = "Table will display the firsT name, last name, and salary (\n"
+                + "	id integer FIRST NAME, LAST NAME, SALARY,\n"
+                + "	name text NOT NULL,\n"
+                + "	capacity real\n"
+                + ");";
+        System.out.println(firstname);
+        System.out.println(lastname);
+        System.out.println(salary);
+        
+    public static void main(String[] args) {
+        createNewTable();
+    }
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+**Package ex43;**
